@@ -1,0 +1,52 @@
+:root {
+	--vp-home-hero-name-color: transparent;
+	--vp-home-hero-name-background: -webkit-linear-gradient(
+		315deg,
+		#42d392 25%,
+		#995aff
+	);
+
+	--vp-home-hero-image-background-image: linear-gradient(
+		-45deg,
+		#42d392 50%,
+		#4080ff 50%
+	);
+	--vp-home-hero-image-filter: blur(40px);
+
+	--vp-c-purple: #995aff;
+	--vp-c-purple-light: #af76ff;
+	--vp-c-purple-lighter: #995aff;
+	--vp-c-purple-dark: #481da6;
+	--vp-c-purple-darker: #2a0b79;
+	--vp-c-purple-dimm-1: #d6afff;
+	--vp-c-purple-dimm-2: #e6ccff;
+	--vp-c-purple-dimm-3: #f5e8ff;
+
+	--vp-c-brand: var(--vp-c-purple);
+	--vp-c-brand-light: var(--vp-c-purple-light);
+	--vp-c-brand-lighter: var(--vp-c-purple-lighter);
+	--vp-c-brand-dark: var(--vp-c-purple-dark);
+	--vp-c-brand-darker: var(--vp-c-purple-darker);
+
+	--vp-c-badge-type-warning: #f7ba1e;
+	--vp-c-badge-type-tip: #00d4a1;
+	--vp-c-badge-type-error: #ff4370;
+	--vp-c-badge-type-info: #165dff;
+}
+
+body {
+	font-size: 14px;
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family: var(--vp-font-family-mono);
+}
+
+.vp-doc h2 {
+	margin: 15px 0 16px;
+	padding-top: 10px;
+	border-top: none;
+}
