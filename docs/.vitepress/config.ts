@@ -1,15 +1,12 @@
-import { DefaultTheme } from 'vitepress';
 import { defineConfig } from 'vitepress';
 
-import { nav } from './config/nav';
-
-const themeConfig: DefaultTheme.Config = {
-	nav,
-};
+import { head } from './config/head';
+import { themeConfig } from './config/theme.config';
 
 const config = defineConfig({
 	title: '前端知识库',
 	description: '',
+	head,
 	themeConfig,
 });
 

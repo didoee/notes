@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'vitepress/theme';
+import type { DefaultTheme } from 'vitepress/theme';
 
 const nav: DefaultTheme.Config['nav'] = [
 	{

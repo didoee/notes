@@ -8,7 +8,7 @@ hero:
   name: 前端知识库
   tagline: 个人知识库，记录 & 分享个人碎片化、结构化、体系化的知识内容。
   image:
-    src: /logo.png
+    src: /logo.gif
     alt:
   actions:
     - theme: brand
@@ -20,12 +20,12 @@ hero:
 
 features:
   - icon: ⚡️
-    title:
+    title: 保持专注
     details:
   - icon: 🌌
-    title:
+    title: 善于洞察
     details:
   - icon: 🌟
-    title:
+    title: 乐于分享
     details:
 ---
