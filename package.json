@@ -7,7 +7,9 @@
 	"scripts": {
 		"dev": " vitepress dev docs",
 		"build": "vitepress build docs",
-		"serve": "vitepress serve docs"
+		"serve": "vitepress serve docs",
+		// 加文档目录生成sidebar
+		"vsg": "vsg -d"
 	},
 	"devDependencies": {
 		"vite": "^3.1.0",
