@@ -6,14 +6,15 @@ titleTemplate: 个人知识库，记录和分享个人碎片化、结构化、�
 
 hero:
   name: 前端知识库
-  tagline: 个人知识库，记录 & 分享个人碎片化、结构化、体系化的知识内容。
+  tagline: 记录&分享个人碎片化、结构化、体系化的知识内容
   image:
-    src: /logo.gif
+    src: /logo.png
     alt:
   actions:
     - theme: brand
       text: 开始
-      link: /categories/issues/index.html
+      link: /course/html/index
+
     - theme: alt
       text: GitHub
       link: https://github.com/didoee

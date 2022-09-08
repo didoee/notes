@@ -10,7 +10,9 @@
 	--vp-home-hero-image-background-image: linear-gradient(
 		-45deg,
 		#af76ff 25%,
-		#00d4a1 50%
+		#fabdb9 50%,
+		#dbee90 70%,
+		#bcdf84 100%
 	);
 	--vp-home-hero-image-filter: blur(40px);
 
@@ -37,9 +39,6 @@
 
 body {
 	font-size: 14px;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
 }
 
 pre,

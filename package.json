@@ -10,13 +10,13 @@
 		"serve": "vitepress serve docs"
 	},
 	"devDependencies": {
-		"unplugin-vue-components": "^0.22.4",
 		"vite": "^3.1.0",
 		"vitepress": "1.0.0-alpha.13",
 		"vue": "^3.2.39"
 	},
 	"dependencies": {
-		"@arco-design/web-vue": "^2.36.0"
+		"vitepress-auto-nav-sidebar": "^0.0.4",
+		"vitepress-siderbar-generator": "^1.0.1"
 	},
 	"keywords": [],
 	"license": "ISC"
