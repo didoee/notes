@@ -8,6 +8,12 @@ const config = defineConfig({
 	description: '',
 	head,
 	themeConfig,
+	markdown: {
+		theme: {
+			light: 'github-light',
+			dark: 'github-dark',
+		}
+	},
 });
 
 export default config;

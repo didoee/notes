@@ -8,7 +8,6 @@
 		"dev": " vitepress dev docs",
 		"build": "vitepress build docs",
 		"serve": "vitepress serve docs",
-		// 加文档目录生成sidebar
 		"vsg": "vsg -d"
 	},
 	"devDependencies": {
@@ -17,7 +16,8 @@
 		"vue": "^3.2.39"
 	},
 	"dependencies": {
-		"vitepress-auto-nav-sidebar": "^0.0.4",
+		"@ruabick/md-demo-plugins": "^0.2.8",
+		"@types/node": "^18.7.16",
 		"vitepress-siderbar-generator": "^1.0.1"
 	},
 	"keywords": [],

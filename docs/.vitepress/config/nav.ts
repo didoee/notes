@@ -12,13 +12,33 @@ const nav: DefaultTheme.Config['nav'] = [
 		items: [
 			{
 				text: 'HTML',
-				link: '/course/html/index',
+				link: '/course/html/01_基础',
 				activeMatch: '/course/html/',
 			},
 			{
 				text: 'CSS',
-				link: '/course/css/index',
+				link: '/course/css/01_基础',
 				activeMatch: '/course/css/',
+			},
+			{
+				text: 'HTML5',
+				link: '/course/html5/01_HTML5',
+				activeMatch: '/course/html5/',
+			},
+			{
+				text: 'CSS3',
+				link: '/course/css3/01_基础',
+				activeMatch: '/course/css3/',
+			},
+			{
+				text: 'ES6',
+				link: '/course/es6/01_ES6',
+				activeMatch: '/course/es6/',
+			},
+			{
+				text: 'TypeScript',
+				link: '/course/ts/01_typescript',
+				activeMatch: '/course/typescript/',
 			},
 		],
 	},

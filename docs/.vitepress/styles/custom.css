@@ -35,6 +35,11 @@
 	--vp-c-badge-type-tip: #00d4a1;
 	--vp-c-badge-type-error: #ff4370;
 	--vp-c-badge-type-info: #165dff;
+
+	--vp-c-white-soft: #ffffff;
+
+	--demi-border-color: #ebedf1;
+
 }
 
 body {
@@ -52,4 +57,13 @@ samp {
 	margin: 15px 0 16px;
 	padding-top: 10px;
 	border-top: none;
+}
+
+.VPNavBarTitle.has-sidebar {
+	border-bottom: 0;
+}
+
+.vp-doc :not(pre) > code{
+	background-color: #ff4b55;
+	color: #fff;
 }
