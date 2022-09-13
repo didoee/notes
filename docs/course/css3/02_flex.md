@@ -2,15 +2,15 @@
 
 - 布局的传统解决方案，基于盒状模型，依赖 `display 属性 + position属性 + float属性`。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现
 
-- 2009年，`W3C` 提出了一种新的方案`Flex 布局`，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能
+- 2009 年，`W3C` 提出了一种新的方案`Flex 布局`，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能
 
 - `Flex `是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性
 
 - 任何一个容器都可以指定为 Flex 布局,行内元素也可以使用 Flex 布局
 
-  ```css light
-  .box{
-      display: flex;
+  ```css
+  .box {
+  	    display: flex;
   }
   ```
 
@@ -24,24 +24,24 @@
 
 ![Flex布局](./images/01.png)
 
-容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
+容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。
 
-项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
+项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。
 
 ## 容器属性
 
-以下6个属性设置在容器上：
+以下 6 个属性设置在容器上：
 
-- `flex-direction`  属性决定主轴的方向（即项目的排列方向）
-- `flex-wrap`   默认情况下，项目都排在一条线（又称"轴线"）上。`flex-wrap`属性定义，如果一条轴线排不下，如何换行
-- `flex-flow`  是`flex-direction`属性和`flex-wrap`属性的简写形式，默认值为`row nowrap`
-- `justify-content`  定义了项目在主轴上的对齐方式
-- `align-items`  定义项目在交叉轴上如何对齐
-- `align-content`   定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+- `flex-direction` 属性决定主轴的方向（即项目的排列方向）
+- `flex-wrap` 默认情况下，项目都排在一条线（又称"轴线"）上。`flex-wrap`属性定义，如果一条轴线排不下，如何换行
+- `flex-flow` 是`flex-direction`属性和`flex-wrap`属性的简写形式，默认值为`row nowrap`
+- `justify-content` 定义了项目在主轴上的对齐方式
+- `align-items` 定义项目在交叉轴上如何对齐
+- `align-content` 定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
 
 ### flex-direction
 
-`flex-direction`属性决定主轴的方向（即项目的排列方向），它有4个值：
+`flex-direction`属性决定主轴的方向（即项目的排列方向），它有 4 个值：
 
 - `row`（默认值）：主轴为水平方向，起点在左端
 - `row-reverse`：主轴为水平方向，起点在右端
@@ -50,7 +50,7 @@
 
 ### flex-wrap
 
-默认情况下，项目都排在一条线（又称"轴线"）上。`flex-wrap`属性定义，如果一条轴线排不下，如何换行，他有3个值：
+默认情况下，项目都排在一条线（又称"轴线"）上。`flex-wrap`属性定义，如果一条轴线排不下，如何换行，他有 3 个值：
 
 - `nowrap`（默认）：不换行
 - `wrap`：换行，第一行在上方
@@ -62,7 +62,7 @@
 
 ### justify-content
 
-`justify-content`属性定义了项目在主轴上的对齐方式，它取5个值，具体对齐方式与轴的方向有关
+`justify-content`属性定义了项目在主轴上的对齐方式，它取 5 个值，具体对齐方式与轴的方向有关
 
 - `flex-start`（默认值）：左对齐
 - `flex-end`：右对齐
@@ -73,17 +73,17 @@
 
 ### align-items
 
-`align-items `属性定义项目在交叉轴上如何对齐,它取5个值,具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下
+`align-items `属性定义项目在交叉轴上如何对齐,它取 5 个值,具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下
 
 - `flex-start`：交叉轴的起点对齐
 - `flex-end`：交叉轴的终点对齐
 - `center`：交叉轴的中点对齐
 - `baseline`: 项目的第一行文字的基线对齐
-- `stretch`（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度
+- `stretch`（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度
 
 ### align-content
 
-`align-content`属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用,它可能取5个值,具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下
+`align-content`属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用,它可能取 5 个值,具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下
 
 - `flex-start`：交叉轴的起点对齐
 - `flex-end`：交叉轴的终点对齐
@@ -91,7 +91,8 @@
 - `stretch`（默认值）：如果项目未设置高度或设为`auto`，将占满整个容器的高度
 
 ## 项目属性
-以下6个属性设置在项目上。
+
+以下 6 个属性设置在项目上。
 
 - `order`
 - `flex-grow`
@@ -102,11 +103,11 @@
 
 ### order
 
-`order`属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+`order`属性定义项目的排列顺序。数值越小，排列越靠前，默认为 0。
 
-```css light
+```css
 .item {
-  order: <integer>;
+	order: <integer>;
 }
 ```
 
@@ -114,43 +115,43 @@
 
 `flex-grow`属性定义项目的放大比例，默认为`0`，即如果存在剩余空间，也不放大。
 
-```css light
+```css
 .item {
-  flex-grow: <number>; /* default 0 */
+	flex-grow: <number>; /* default 0 */
 }
 ```
 
 ### flex-shrink
 
-`flex-shrink`属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+`flex-shrink`属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小
 
-```css light
+```css
 .item {
-  flex-shrink: <number>; /* default 1 */
+	flex-shrink: <number>; /* default 1 */
 }
 ```
 
-如果所有项目的`flex-shrink`属性都为1，当空间不足时，都将等比例缩小。如果一个项目的`flex-shrink`属性为0，其他项目都为1，则空间不足时，前者不缩小
+如果所有项目的`flex-shrink`属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的`flex-shrink`属性为 0，其他项目都为 1，则空间不足时，前者不缩小
 
 ### flex-basis
 
 `flex-basis`属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为`auto`，即项目的本来大小
 
-```css light
+```css
 .item {
-  flex-basis: <length> | auto; /* default auto */
+	flex-basis: <length> | auto; /* default auto */
 }
 ```
 
-它可以设为跟`width`或`height`属性一样的值（比如350px），则项目将占据固定空间
+它可以设为跟`width`或`height`属性一样的值（比如 350px），则项目将占据固定空间
 
 ### flex
 
 `flex`属性是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为`0 1 auto`。后两个属性可选。
 
-```css light
+```css
 .item {
-  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+	flex: none | [ < 'flex-grow' > < 'flex-shrink' >? || < 'flex-basis' > ];
 }
 ```
 
@@ -162,11 +163,10 @@
 
 `align-self`属性允许单个项目有与其他项目不一样的对齐方式，可覆盖`align-items`属性。默认值为`auto`，表示继承父元素的`align-items`属性，如果没有父元素，则等同于`stretch`
 
-```css light
+```css
 .item {
-  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
 
-该属性可能取6个值，除了auto，其他都与align-items属性完全一致
-
+该属性可能取 6 个值，除了 auto，其他都与 align-items 属性完全一致

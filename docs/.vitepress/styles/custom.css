@@ -36,10 +36,7 @@
 	--vp-c-badge-type-error: #ff4370;
 	--vp-c-badge-type-info: #165dff;
 
-	--vp-c-white-soft: #ffffff;
-
 	--vp-code-block-bg: #ffffff;
-
 }
 
 body {
@@ -63,16 +60,20 @@ samp {
 	border-bottom: 0;
 }
 
-.vp-doc :not(pre) > code{
+.vp-doc :not(pre) > code {
 	background-color: var(calc(--vp-c-red-lighter / 0.5));
 	color: var(--vp-c-red-lighter);
 }
 
-.vp-doc div[class*='language-']{
-	border: 1px solid var(--vp-c-purple-dimm-1);
+.vp-doc div[class*='language-'] {
+	border: 1px solid var(--vp-c-divider-light);
 	border-radius: 3px;
 }
 
-.vp-doc [class*='language-'] > span.lang{
+.vp-doc div[class*='language-']:hover {
+	border-color: var(--vp-c-brand);
+}
+
+.vp-doc [class*='language-'] > span.lang {
 	color: #1a1a1a;
 }

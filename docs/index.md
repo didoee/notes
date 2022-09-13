@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /course/line/01_学前知识
+      link: /course/line/index
 
     - theme: alt
       text: GitHub

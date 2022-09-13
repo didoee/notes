@@ -2,7 +2,7 @@
 
 浏览器与服务器之间，采用 HTTP 协议通信。用户在浏览器地址栏键入一个网址，或者通过网页表单向服务器提交内容，这时浏览器就会向服务器发出 HTTP 请求。
 
-1999年，微软公司发布 IE 浏览器5.0版，第一次引入新功能：允许 JavaScript 脚本向服务器发起 HTTP 请求。这个功能当时并没有引起注意，直到2004年 Gmail 发布和2005年 Google Map 发布，才引起广泛重视。2005年2月，AJAX 这个词第一次正式提出，它是 Asynchronous JavaScript and XML 的缩写，指的是通过 JavaScript 的异步通信，从服务器获取 XML 文档从中提取数据，再更新当前网页的对应部分，而不用刷新整个网页。后来，AJAX 这个词就成为 JavaScript 脚本发起 HTTP 通信的代名词，也就是说，只要用脚本发起通信，就可以叫做 AJAX 通信。W3C 也在2006年发布了它的国际标准。
+1999 年，微软公司发布 IE 浏览器 5.0 版，第一次引入新功能：允许 JavaScript 脚本向服务器发起 HTTP 请求。这个功能当时并没有引起注意，直到 2004 年 Gmail 发布和 2005 年 Google Map 发布，才引起广泛重视。2005 年 2 月，AJAX 这个词第一次正式提出，它是 Asynchronous JavaScript and XML 的缩写，指的是通过 JavaScript 的异步通信，从服务器获取 XML 文档从中提取数据，再更新当前网页的对应部分，而不用刷新整个网页。后来，AJAX 这个词就成为 JavaScript 脚本发起 HTTP 通信的代名词，也就是说，只要用脚本发起通信，就可以叫做 AJAX 通信。W3C 也在 2006 年发布了它的国际标准。
 
 具体来说，AJAX 包括以下几个步骤。
 
@@ -17,13 +17,13 @@
 
 `XMLHttpRequest`本身是一个构造函数，可以使用`new`命令生成实例。它没有任何参数
 
-```js light
+```js
 var xhr = new XMLHttpRequest();
 ```
 
 一旦新建实例，就可以使用`open()`方法指定建立 HTTP 连接的一些细节。
 
-```js light
+```js
 xhr.open('GET', 'http://119.91.125.14:8888/home/goods?type=pop&page=1', true);
 ```
 
@@ -31,11 +31,11 @@ xhr.open('GET', 'http://119.91.125.14:8888/home/goods?type=pop&page=1', true);
 
 然后，指定回调函数，监听通信状态（`readyState`属性）的变化。
 
-```js light
+```js
 xhr.onreadystatechange = handleStateChange;
 
 function handleStateChange() {
-  // ...
+	// ...
 }
 ```
 
@@ -43,50 +43,49 @@ function handleStateChange() {
 
 最后使用`send()`方法，实际发出请求。
 
-```js light
-xhr.send(null)
+```js
+xhr.send(null);
 ```
 
 上面代码中，`send()`的参数为`null`，表示发送请求的时候，不带有数据体。如果发送的是 POST 请求，这里就需要指定数据体。
 
 一旦拿到服务器返回的数据，AJAX 不会刷新整个网页，而是只更新网页里面的相关部分，从而不打断用户正在做的事情
 
-## 封装Ajax
+## 封装 Ajax
 
-```js light
+```js
 function ajax(options) {
-  // 取出参数
-  var url = options.url;
-  var method = options.method || 'GET';
-  var data = options.data || {};
-  var header = options.header || {};
-  var success = options.success;
+	// 取出参数
+	var url = options.url;
+	var method = options.method || 'GET';
+	var data = options.data || {};
+	var header = options.header || {};
+	var success = options.success;
 
-  // 创建XMLHTTPRequst对象
-  var xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+	// 创建XMLHTTPRequst对象
+	var xhr = XMLHttpRequest
+		? new XMLHttpRequest()
+		: new ActiveXObject('Microsoft.XMLHTTP');
 
-  // 监听xhr state状态的变化
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 201)) {
-      success(JSON.parse(xhr.response));
-    }
-  };
+	// 监听xhr state状态的变化
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 201)) {
+			success(JSON.parse(xhr.response));
+		}
+	};
 
-  // 开启请求
-  xhr.open(method, url, true);
+	// 开启请求
+	xhr.open(method, url, true);
 
-  // 设置请求头
-  for (var key in header) {
-    xhr.setRequestHeader(key, header[key]);
-  }
+	// 设置请求头
+	for (var key in header) {
+		xhr.setRequestHeader(key, header[key]);
+	}
 
-  // 发送请求
-  xhr.send(JSON.stringify(data));
+	// 发送请求
+	xhr.send(JSON.stringify(data));
 }
-
 ```
-
-
 
 ::: info
 

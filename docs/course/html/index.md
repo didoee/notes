@@ -24,7 +24,7 @@ WebStorm
 
 ## 第一个网页
 
-```html light
+```html
 <html>
 	<head>
 		<title>我的第一个网页</title>
@@ -40,7 +40,7 @@ title 网页的标题 body 网页的身体部分
 
 ## 完整的 html 结构
 
-```html light
+```html
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -82,7 +82,7 @@ safari
 
 h1-h6 随着数字越大，字体越小越细
 
-```html light
+```html
 <h1>轻轻的我走了，</h1>
 <h2>正如我轻轻的来；</h2>
 <h3>我轻轻的招手，</h3>
@@ -93,7 +93,7 @@ h1-h6 随着数字越大，字体越小越细
 
 ## 段落标签
 
-```html light
+```html
 <p>轻轻的我走了，</p>
 <p>正如我轻轻的来；</p>
 <p>我轻轻的招手，</p>
@@ -103,7 +103,7 @@ h1-h6 随着数字越大，字体越小越细
 
 ## 换行标签
 
-```html light
+```html
 轻轻的我走了，<br /><br />
 正如我轻轻的来； <br />
 我轻轻的招手，
@@ -111,7 +111,7 @@ h1-h6 随着数字越大，字体越小越细
 
 ## 水平线标签
 
-```html light
+```html
 轻轻的我走了，
 <hr />
 正如我轻轻的来；
@@ -121,13 +121,13 @@ h1-h6 随着数字越大，字体越小越细
 
 ## 文字加粗
 
-```html light
+```html
 <b>文字加粗</b> <strong>文字加粗</strong>
 ```
 
 ## 文字倾斜
 
-```html light
+```html
 <em>文字倾斜</em> <i>文字倾斜</i>
 ```
 
@@ -135,7 +135,7 @@ h1-h6 随着数字越大，字体越小越细
 
 跳转到另一个页面
 
-```html light
+```html
 <a href="https://www.baidu.com">百度</a>
 <a href="https://www.qq.com">QQ</a>
 <a href="./01_hello.html">hello</a>
@@ -163,7 +163,7 @@ width 宽度
 
 height 图片的高度
 
-```html light
+```html
 <img
 	src="./img/01.webp"
 	alt="图片一"
@@ -180,7 +180,7 @@ ul 无序列表开始
 
 li 列表项
 
-```html light
+```html
 <ul>
 	<li>西游记</li>
 	<li>三国演义</li>
@@ -191,7 +191,7 @@ li 列表项
 
 ## 有序列表
 
-```html light
+```html
 <ol>
 	<li>西游记</li>
 	<li>三国演义</li>
@@ -232,7 +232,7 @@ li 列表项
 
 ## 文字的容器标签
 
-```html light
+```html
 <span>span 文字容器</span>
 ```
 
@@ -243,7 +243,7 @@ li 列表项
 
 ## 实体符号
 
-```html light
+```html
 轻轻的我走了，正如我 &nbsp;&nbsp;&nbsp;轻轻的来； 版权符号 &copy;
 <br />
 &lt;a&gt;&trade;
@@ -257,7 +257,7 @@ tr 行
 
 td 单元格（列）
 
-```html light
+```html
 <table border="1" width="500px" height="150px" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>姓名</td>
@@ -302,7 +302,7 @@ tfoot 表格的底部
 
 给 td 设置的是当前单元格内容的对齐方式
 
-```html light
+```html
 <table border="1" width="500px" cellspacing="0">
 	<caption>
 		表格的标题
@@ -347,7 +347,7 @@ tfoot 表格的底部
 
 `rowspan` 合并行 值就是需要合并的行的数量
 
-```html light
+```html
 <table border="1" width="500px" height="150px" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>姓名</td>
@@ -385,7 +385,7 @@ post: 会将请求参数放在请求体中
 application/x-www-form-urlencoded
 multipart/form-data(文件上传)
 
-```html light
+```html
 <!-- form 通常情况下用来做提交数据 登陆、注册 -->
 <!-- action 接口路径（后端） 提交表单数据到某一个位置-->
 <!-- 
@@ -426,7 +426,7 @@ name` 规定 input 的名称(在表单提交时作为 key) title= 10
 
 `selected` 是下拉列表中默认选中
 
-```html light
+```html
   <!--
     key 键 value 值
     type 规定input 的类型
