@@ -12,20 +12,17 @@ export default function useSidebar(nav: Array<string>) {
 			const text = _.split('_')[1];
 
 			return {
-				text: text.includes('index') ? '基础' : text,
+				text: text?.includes('index') ? '基础' : text,
 				link: `${dir}${_}`,
 			};
 		});
 	};
 
 	for (const dir of nav) {
-		sidebar[dir] = [
-			{
-				text: dir.split('/')[2],
-				collapsible: true,
-				items: getSidebar(dir),
-			},
-		];
+		const items = getSidebar(dir);
+		if (items.length > 1) {
+			sidebar[dir] = [{ text: dir.split('/')[2], collapsible: true, items }];
+		}
 	}
 
 	return { sidebar };

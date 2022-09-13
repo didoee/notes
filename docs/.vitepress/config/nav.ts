@@ -12,7 +12,7 @@ const nav: DefaultTheme.Config['nav'] = [
 		items: [
 			{
 				text: 'HTML',
-				link: '/course/html/01_基础',
+				link: '/course/html/index',
 				activeMatch: '/course/html/',
 			},
 			{

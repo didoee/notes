@@ -38,7 +38,7 @@
 
 	--vp-c-white-soft: #ffffff;
 
-	--demi-border-color: #ebedf1;
+	--vp-code-block-bg: #ffffff;
 
 }
 
@@ -64,6 +64,15 @@ samp {
 }
 
 .vp-doc :not(pre) > code{
-	background-color: #ff4b55;
-	color: #fff;
+	background-color: var(calc(--vp-c-red-lighter / 0.5));
+	color: var(--vp-c-red-lighter);
+}
+
+.vp-doc div[class*='language-']{
+	border: 1px solid var(--vp-c-purple-dimm-1);
+	border-radius: 3px;
+}
+
+.vp-doc [class*='language-'] > span.lang{
+	color: #1a1a1a;
 }

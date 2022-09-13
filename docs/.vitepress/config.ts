@@ -9,10 +9,7 @@ const config = defineConfig({
 	head,
 	themeConfig,
 	markdown: {
-		theme: {
-			light: 'github-light',
-			dark: 'github-dark',
-		}
+		theme:'light-plus',
 	},
 });
 
