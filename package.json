@@ -16,7 +16,6 @@
 		"vue": "^3.2.39"
 	},
 	"dependencies": {
-		"@ruabick/md-demo-plugins": "^0.2.8",
 		"@types/node": "^18.7.16",
 		"vitepress-siderbar-generator": "^1.0.1"
 	},
