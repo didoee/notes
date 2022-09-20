@@ -12,7 +12,6 @@ const config = defineConfig({
 		toc: { level: [1, 2] },
 		theme: 'light-plus',
 	},
-	outDir: 'dist',
 });
 
 export default config;
