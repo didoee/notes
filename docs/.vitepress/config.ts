@@ -9,7 +9,8 @@ const config = defineConfig({
 	head,
 	themeConfig,
 	markdown: {
-		theme:'light-plus',
+		toc: { level: [1, 2] },
+		theme: 'light-plus',
 	},
 });
 

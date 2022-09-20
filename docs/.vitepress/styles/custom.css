@@ -60,6 +60,7 @@ samp {
 	border-bottom: 0;
 }
 
+/* code */
 .vp-doc :not(pre) > code {
 	background-color: var(calc(--vp-c-red-lighter / 0.5));
 	color: var(--vp-c-red-lighter);
@@ -76,4 +77,26 @@ samp {
 
 .vp-doc [class*='language-'] > span.lang {
 	color: #1a1a1a;
+}
+
+/* home */
+.VPHome {
+	padding-bottom: 96px !important;
+}
+
+/* table */
+
+.vp-doc tr {
+	border: 0;
+}
+.vp-doc th {
+	font-size: 14px;
+	font-weight: 600;
+	background-color: var(--vp-c-white-soft);
+	border: 0;
+}
+
+.vp-doc td {
+	border: 0;
+	background-color: var(-vp-c-white);
 }

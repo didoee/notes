@@ -4,23 +4,12 @@ HTML 的全称为超文本标记语言，是一种标记语言。它包括一系
 
 ## 开发工具
 
-记事本
-
-编写对应的 HTML 代码，更改后缀名为 html,通过浏览器方式打开
-
-HBuilderX
-
-[HBuilderX-高效极客技巧 (dcloud.io)](https://www.dcloud.io/hbuilderx.html)
-
-VSCODE
-
-[Documentation for Visual Studio Code](https://code.visualstudio.com/docs/?dv=win)
-
-WebStorm
-
-[WebStorm: The Smartest JavaScript IDE, by JetBrains](https://www.jetbrains.com/webstorm/)
-
-....
+| 工具      | 链接                                |
+| --------- | ----------------------------------- |
+| 记事本    |                                     |
+| HBuilderX | https://dcloud.io/hbuilderx.html    |
+| VSCode    | https://code.visualstudio.com       |
+| webstrom  | https://www.jetbrains.com/webstorm/ |
 
 ## 第一个网页
 
@@ -60,23 +49,13 @@ title 网页的标题 body 网页的身体部分
 
 ## 浏览器（代码调试工具）
 
-IE 浏览器
-
-谷歌浏览器（主流）
-
-[Google Chrome 网络浏览器](https://www.google.cn/chrome/)
-
-火狐浏览器
-
-[Firefox 火狐浏览器 - 全新、安全、快速 | 官方最新下载](http://www.firefox.com.cn/)
-
-EDGE
-
-[下载 Microsoft Edge Web 浏览器 | Microsoft](https://www.microsoft.com/zh-cn/edge?r=1)
-
-safari
-
-[Safari 浏览器 - Apple (中国大陆)](https://www.apple.com.cn/safari/)
+| 浏览器             | 下载链接                                 |
+| ------------------ | ---------------------------------------- |
+| IE 浏览器          |                                          |
+| 谷歌浏览器（主流） | https://www.google.cn/intl/zh-CN/chrome/ |
+| 火狐浏览器         | http://www.firefox.com.cn/               |
+| EDGE               | https://www.microsoft.com/zh-cn/edge?r=1 |
+| safari             | https://www.apple.com.cn/safari/         |
 
 ## 标题标签
 

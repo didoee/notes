@@ -4,7 +4,7 @@ specifiers:
   '@ruabick/md-demo-plugins': ^0.2.8
   '@types/node': ^18.7.16
   vite: ^3.1.0
-  vitepress: 1.0.0-alpha.13
+  vitepress: 1.0.0-alpha.15
   vitepress-siderbar-generator: ^1.0.1
   vue: ^3.2.39
 
@@ -15,7 +15,7 @@ dependencies:
 
 devDependencies:
   vite: 3.1.0
-  vitepress: 1.0.0-alpha.13
+  vitepress: 1.0.0-alpha.15
   vue: 3.2.39
 
 packages:
@@ -647,6 +647,10 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: true
+
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
@@ -776,6 +780,33 @@ packages:
       - sass
       - stylus
       - terser
+    dev: false
+
+  /vitepress/1.0.0-alpha.15:
+    resolution: {integrity: sha512-+pHJQCpnv0wVgLRyonisrj7Y77PVhbns2nTLxV9GkH3T+RTY/W2JmRatzBg5WciMaPyO8Ms6F3YElO5PULVv3w==}
+    hasBin: true
+    dependencies:
+      '@docsearch/css': 3.2.1
+      '@docsearch/js': 3.2.1
+      '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.39
+      '@vue/devtools-api': 6.2.1
+      '@vueuse/core': 9.2.0_vue@3.2.39
+      body-scroll-lock: 4.0.0-beta.0
+      nprogress: 0.2.0
+      shiki: 0.11.1
+      vite: 3.1.0
+      vue: 3.2.39
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - '@types/react'
+      - '@vue/composition-api'
+      - less
+      - react
+      - react-dom
+      - sass
+      - stylus
+      - terser
+    dev: true
 
   /vscode-oniguruma/1.6.2:
     resolution: {integrity: sha512-KH8+KKov5eS/9WhofZR8M8dMHWN2gTxjMsG4jd04YhpbPR91fUj7rYQ2/XjeHCJWbg7X++ApRIU9NUwM2vTvLA==}
