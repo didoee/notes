@@ -1,12 +1,12 @@
 <template>
 	<Layout>
-		<template #layout-bottom>
+		<!-- <template #layout-bottom>
 			<div class="footer">
 				<a href="https://beian.miit.gov.cn/" target="_blank">
 					备案号:陕ICP备2022007326
 				</a>
 			</div>
-		</template>
+		</template> -->
 	</Layout>
 </template>
 <script lang="ts" setup>
